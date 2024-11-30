@@ -87,7 +87,7 @@ public class GuessNumber {
         while (!isValid) {
             if (scanner.hasNextByte()) {
                 number = scanner.nextByte();
-                if (number > min && number < max) {
+                if (number >= min && number <= max) {
                     isValid = true;
                 } else {
                     System.out.print("Only number from " + min + " to " + max + ". Enter number: ");
