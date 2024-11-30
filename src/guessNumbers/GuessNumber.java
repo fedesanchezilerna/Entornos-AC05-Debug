@@ -21,7 +21,7 @@ public class GuessNumber {
 
         byte max = dataEntryByteMinMax("Enter the maximum number (10 .. 100): ", MIN, MAX);
 
-        byte attempts = dataEntryByteMinMax("Enter the number of attempts: ", MIN_ATTEMPTS, MAX_ATTEMPTS);
+        byte attempts = dataEntryByteMinMax("Enter the number of attempts (2 .. 10): ", MIN_ATTEMPTS, MAX_ATTEMPTS);
 
         byte rand = randomNumber(max);
         //  System.out.println("Number to guess: " + rand);
