@@ -34,7 +34,7 @@ public class GuessNumber {
                 System.out.println("YOU HAVE WON!!! THE END.");
                 end = true;
 
-            } else if (output == 1) {
+            } else if (output == -1) {
                 System.out.print("Too low! ");
             } else {
                 System.out.print("Too high! ");
