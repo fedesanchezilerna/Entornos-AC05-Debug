@@ -39,6 +39,7 @@ public class GuessNumber {
             } else {
                 System.out.print("Too high! ");
             }
+            count++;
         }
         if (end) System.out.println("You have lost!\nBye!");
 
