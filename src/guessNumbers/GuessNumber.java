@@ -42,7 +42,7 @@ public class GuessNumber {
             }
             count++;
         }
-        if (end) System.out.println("You have lost!\nBye!");
+        if (!end) System.out.println("You have lost!\nBye!");
 
         scanner.close();
     }
