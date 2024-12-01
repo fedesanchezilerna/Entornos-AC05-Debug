@@ -24,7 +24,7 @@ public class GuessNumber {
         byte attempts = dataEntryByteMinMax("Enter the number of attempts (2 .. 10): ", MIN_ATTEMPTS, MAX_ATTEMPTS);
 
         byte rand = randomNumber(max);
-        //  System.out.println("Number to guess: " + rand);
+        System.out.println("Number to guess: " + rand);
 
         while (count <= attempts) {
             byte num = dataEntryByteMinMax("ATTEMPT " + count + ". Enter 1 to " + max + ": ", (byte) 1, max);
@@ -72,11 +72,11 @@ public class GuessNumber {
      */
     public static byte guessNumber(byte num, byte randomNum) {
         if (num > randomNum)
-            return 0;
+            return 1;
         else if (num < randomNum)
             return -1;
         else
-            return 1;
+            return 0;
     }
 
 
